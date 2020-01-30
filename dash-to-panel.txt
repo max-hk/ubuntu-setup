@@ -1,0 +1,5 @@
+[/]
+appicon-padding=8
+dot-style-focused='DOTS'
+dot-style-unfocused='DOTS'
+panel-size=52
