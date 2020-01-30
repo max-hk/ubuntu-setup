@@ -1,0 +1,9 @@
+[/org/gnome/shell/extensions/dash-to-panel/]
+appicon-padding=8
+dot-style-focused='DOTS'
+dot-style-unfocused='DOTS'
+panel-size=52
+
+[/org/gnome/desktop/peripherals/mouse/]
+accel-profile='adaptive'
+speed=0.40000000000000002
