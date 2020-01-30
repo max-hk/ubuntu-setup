@@ -8,9 +8,9 @@
   ./setup.sh
   ```
 
-- Install font Roboto, Noto Sans CJK HK
+- Install font [Roboto](https://github.com/google/roboto/releases/tag/v2.138), [Noto Sans CJK HK](https://github.com/googlefonts/noto-cjk)
 
-- Install dash-to-panel
+- Install [GNOME Shell integration](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep) and [dash-to-panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
 
 - In gnome-tweaks,
 
