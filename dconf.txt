@@ -3,3 +3,6 @@ appicon-padding=8
 dot-style-focused='DOTS'
 dot-style-unfocused='DOTS'
 panel-size=52
+
+[org/mate/desktop/peripherals/mouse]
+locate-pointer=true
