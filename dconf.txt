@@ -6,4 +6,4 @@ panel-size=52
 
 [/org/gnome/desktop/peripherals/mouse/]
 accel-profile='adaptive'
-speed=0.40000000000000002
+speed=0.4
