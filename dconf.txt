@@ -4,5 +4,9 @@ dot-style-focused='DOTS'
 dot-style-unfocused='DOTS'
 panel-size=52
 
+[org/gnome/shell/extensions/desktop-icons]
+show-home=false
+show-trash=false
+
 [org/mate/desktop/peripherals/mouse]
 locate-pointer=true
