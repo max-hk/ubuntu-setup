@@ -1,4 +1,5 @@
 sudo apt install gnome-tweaks
+sudo apt install chrome-gnome-shell
 sudo apt install dconf-editor
 sudo apt install imwheel
 sudo apt install ibus-cangjie
