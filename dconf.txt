@@ -8,3 +8,6 @@ panel-size=52
 [org/gnome/shell/extensions/desktop-icons]
 show-home=false
 show-trash=false
+
+[org/gnome/desktop/peripherals/mouse]
+speed=-0.5
