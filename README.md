@@ -12,7 +12,11 @@
 
 - Install font [Roboto](https://github.com/google/roboto/releases/tag/v2.138), [Noto Sans CJK HK](https://github.com/googlefonts/noto-cjk)
 
-- Install [GNOME Shell integration](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep) and [dash-to-panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
+- Install [GNOME Shell integration](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)
+
+  - Install [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
+  
+  - Install [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 
 - In gnome-tweaks,
 
@@ -20,7 +24,9 @@
   
   - Change Theme to "Yaru Roboto"
   
-  - Turn on dash-to panel
+  - Turn on Dash to Panel
+  
+  - Turn on User Themes
 
 - In "Startup Applications",
 
