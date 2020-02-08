@@ -7,6 +7,8 @@
   chmod +x ./setup.sh
   ./setup.sh
   ```
+  
+- Install [Chrome](https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
 
 - Install font [Roboto](https://github.com/google/roboto/releases/tag/v2.138), [Noto Sans CJK HK](https://github.com/googlefonts/noto-cjk)
 
