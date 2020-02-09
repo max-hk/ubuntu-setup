@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=google-chrome --no-startup-window
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_HK]=(Added by me) Chrome
+Name=(Added by me) Chrome
+Comment[en_HK]=
+Comment=
