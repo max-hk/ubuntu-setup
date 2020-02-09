@@ -6,3 +6,6 @@ sudo apt install ibus-cangjie
 
 touch ~/Templates/Empty\ Document
 dconf load / < dconf.txt
+
+# Rebuild font cache after copying fonts
+# fc-cache -f -v
