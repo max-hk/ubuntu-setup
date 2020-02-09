@@ -26,9 +26,9 @@
   
   - Change Theme to "Yaru Roboto"
   
-  - Turn on Dash to Panel
+  - Turn on "Dash to Panel"
   
-  - Turn on User Themes
+  - Turn on "User Themes"
 
 - In "Startup Applications",
 
