@@ -7,5 +7,5 @@ sudo apt install ibus-cangjie
 touch ~/Templates/Empty\ Document
 dconf load / < dconf.txt
 
-# Rebuild font cache after copying font files
-# fc-cache -f -v
+# Rebuild font cache after copying font files and enabling emoji
+fc-cache -f -v
