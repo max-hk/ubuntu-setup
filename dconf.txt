@@ -2,6 +2,8 @@
 appicon-padding=8
 dot-style-focused='DOTS'
 dot-style-unfocused='DOTS'
+group-apps=false
+group-apps-label-max-width=0
 location-clock='STATUSRIGHT'
 panel-size=52
 
