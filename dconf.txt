@@ -10,4 +10,8 @@ show-home=false
 show-trash=false
 
 [org/gnome/desktop/peripherals/mouse]
-speed=-0.5
+speed=1
+
+[org/cangjians/ibus/cangjie]
+include-symbols=true
+version=5
