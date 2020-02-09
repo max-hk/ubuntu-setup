@@ -37,6 +37,20 @@
   
   - Add Chrome  
     command: `google-chrome --no-startup-window`
+ 
+- Add Cangjie input method
+
+  - 
+      ```
+      sudo gedit /usr/lib/python3/dist-packages/ibus_cangjie/setup.py
+      ```
+
+      Comment out line 23, 24
+  
+  - Add Cangjie in Settings → Region → language → + → Other → Chinese (Cangjie)
+  
+
+
     
 ## Useful tools
 
