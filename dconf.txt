@@ -1,3 +1,10 @@
+[org/gnome/desktop/interface]
+font-name='Roboto 11'
+document-font-name='Roboto 11'
+
+[org/gnome/desktop/wm/preferences]
+titlebar-font='Roboto Bold 11'
+
 [org/gnome/shell]
 favorite-apps=['org.gnome.Nautilus.desktop', 'gnome-system-monitor.desktop', 'google-chrome.desktop', 'org.gnome.Terminal.desktop']
 
