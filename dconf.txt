@@ -5,6 +5,9 @@ document-font-name='Roboto 11'
 [org/gnome/desktop/wm/preferences]
 titlebar-font='Roboto Bold 11'
 
+[org/gnome/desktop/peripherals/mouse]
+speed=1
+
 [org/gnome/shell]
 favorite-apps=['org.gnome.Nautilus.desktop', 'gnome-system-monitor.desktop', 'google-chrome.desktop', 'org.gnome.Terminal.desktop']
 
@@ -19,8 +22,8 @@ dot-style-unfocused='DOTS'
 location-clock='STATUSRIGHT'
 panel-size=52
 
-[org/gnome/desktop/peripherals/mouse]
-speed=1
+[org/gnome/shell/extensions/user-theme]
+name='Yaru Roboto'
 
 [org/cangjians/ibus/cangjie]
 include-symbols=true
