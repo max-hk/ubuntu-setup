@@ -30,6 +30,7 @@
   
   - Turn on "User Themes"
 
+<!--
 - In "Startup Applications",
 
   - Add Imwheel  
@@ -37,7 +38,8 @@
   
   - Add Chrome  
     command: `google-chrome --no-startup-window`
- 
+-->
+
 - Add Cangjie input method
 
   - 
