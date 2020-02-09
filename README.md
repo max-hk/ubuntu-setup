@@ -3,7 +3,7 @@
 ## Run
 
 - 
-  ```
+  ```bash
   chmod +x ./setup.sh
   ./setup.sh
   ```
@@ -35,3 +35,22 @@
   
   - Add Chrome  
     command: `google-chrome --no-startup-window`
+    
+## Useful tools
+
+### Disk partition
+
+- GParted
+
+  ```bash
+  sudo apt install gparted
+  ```
+
+### Mouse settings
+
+- mate-mouse-properties
+
+  ```bash
+  sudo apt install mate-mouse-properties
+  ```
+  
