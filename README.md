@@ -21,14 +21,8 @@
   - Install [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 
 - In gnome-tweaks,
-
-  - Change font to Roboto
-  
-  - Change Theme to "Yaru Roboto"
-  
-  - Turn on "Dash to Panel"
-  
-  - Turn on "User Themes"
+    
+  - Turn on "Dash to Panel", "User Themes"
 
 <!--
 - In "Startup Applications",
