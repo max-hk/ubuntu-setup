@@ -16,23 +16,7 @@
 
 - Install [GNOME Shell integration](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)
 
-  - Install [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
-  
-  - Install [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
-
-- In gnome-tweaks,
-    
-  - Turn on "Dash to Panel", "User Themes"
-
-<!--
-- In "Startup Applications",
-
-  - Add Imwheel  
-    Command: `imwheel`
-  
-  - Add Chrome  
-    command: `google-chrome --no-startup-window`
--->
+  - Install and turn on [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/), [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 
 - Add Cangjie input method
 
