@@ -18,7 +18,7 @@
 
   - Install and turn on [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/), [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 
-- Add Cangjie input method
+- Cangjie
 
   - 
       ```
@@ -27,7 +27,7 @@
 
       Comment out line 23, 24
   
-  - Add Cangjie in Settings → Region → language → + → Other → Chinese (Cangjie)
+  - Add Cangjie input method in Settings → Region → language → + → Other → Chinese (Cangjie)
   
 
 
