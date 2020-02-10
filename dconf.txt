@@ -21,7 +21,6 @@ appicon-padding=8
 dot-style-focused='DOTS'
 dot-style-unfocused='DOTS'
 location-clock='STATUSRIGHT'
-panel-size=48
 
 [org/gnome/shell/extensions/user-theme]
 name='Yaru Roboto'
