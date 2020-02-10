@@ -4,6 +4,7 @@ sudo apt install dconf-editor
 sudo apt install imwheel
 sudo apt install ibus-cangjie
 
+cp -r ./~/. ~/
 touch ~/Templates/Empty\ Document
 dconf load / < dconf.txt
 
