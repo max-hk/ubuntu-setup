@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/usr/bin/google-chrome --profile-directory=Default --password-store=basic
+Icon=google-chrome
+Name=Google Chrome
+Terminal=false
+Type=Application
