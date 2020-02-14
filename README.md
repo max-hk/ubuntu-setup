@@ -34,19 +34,16 @@
     
 ## Useful tools
 
-### Disk partition
-
-- GParted
+- GParted (disk partition)
 
   ```bash
   sudo apt install gparted
   ```
 
-### Mouse settings
-
-- mate-mouse-properties
+- mate-mouse-properties (mouse settings)
 
   ```bash
   sudo apt install mate-mouse-properties
   ```
   
+- Anbox (Android Apps)
