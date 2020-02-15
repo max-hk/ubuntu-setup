@@ -12,6 +12,9 @@ speed=-0.5
 favorite-apps=['org.gnome.Nautilus.desktop', 'gnome-system-monitor.desktop', 'google-chrome.desktop', 'org.gnome.Terminal.desktop']
 enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'desktop-icons@csoriano', 'dash-to-panel@jderose9.github.com']
 
+[org/gnome/desktop/interface]
+enable-hot-corners=true
+
 [org/gnome/shell/extensions/desktop-icons]
 show-home=false
 show-trash=false
