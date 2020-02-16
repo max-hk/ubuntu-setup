@@ -22,4 +22,3 @@ done
 
 echo "fc-cache -f"
 fc-cache -f
-
