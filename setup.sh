@@ -3,7 +3,6 @@ sudo apt install chrome-gnome-shell
 sudo apt install dconf-editor
 sudo apt install imwheel
 sudo apt install ibus-cangjie
-sudo apt install fonts-firacode
 
 cp -r ./~/. ~/
 touch ~/Templates/Empty\ Document
