@@ -5,7 +5,9 @@
 - 
   ```bash
   chmod +x ./setup.sh
+  chmod +x ./install_firacode.sh
   ./setup.sh
+  ./install_firacode.sh
   ```
   
 - Install [Chrome](https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
