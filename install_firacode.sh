@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Source: https://github.com/tonsky/FiraCode/wiki/Linux-instructions#manual-installation
 
 fonts_dir="${HOME}/.local/share/fonts"
 if [ ! -d "${fonts_dir}" ]; then
