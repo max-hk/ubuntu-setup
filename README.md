@@ -48,4 +48,6 @@
   sudo apt install mate-mouse-properties
   ```
   
-- Anbox (Android Apps)
+- [Anbox](https://docs.anbox.io/userguide/install.html) (Android Apps)
+
+- [Stacer](https://github.com/oguzhaninan/Stacer/releases) (Task Manager)
