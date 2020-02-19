@@ -18,7 +18,7 @@ show-home=false
 show-trash=false
 
 [org/gnome/shell/extensions/dash-to-panel]
-appicon-margin=4
+appicon-margin=2
 appicon-padding=8
 dot-style-focused='DOTS'
 dot-style-unfocused='DOTS'
