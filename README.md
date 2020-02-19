@@ -27,7 +27,7 @@
       sudo gedit /usr/lib/python3/dist-packages/ibus_cangjie/setup.py
       ```
 
-      Comment out line 23, 24
+  - Comment out line 23, 24
   
   - Add Cangjie input method in Settings → Region & Language → + → ⁝ → Other → Chinese (Cangjie)
   
