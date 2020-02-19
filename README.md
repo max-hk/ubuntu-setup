@@ -29,7 +29,7 @@
 
       Comment out line 23, 24
   
-  - Add Cangjie input method in Settings → Region → language → + → Other → Chinese (Cangjie)
+  - Add Cangjie input method in Settings → Region & Language → + → ⁝ → Other → Chinese (Cangjie)
   
 
 
