@@ -1,8 +1,8 @@
-sudo apt install gnome-tweaks
-sudo apt install chrome-gnome-shell
-sudo apt install dconf-editor
-sudo apt install imwheel
-sudo apt install ibus-cangjie
+sudo apt install gnome-tweaks --yes
+sudo apt install chrome-gnome-shell --yes
+sudo apt install dconf-editor --yes
+sudo apt install imwheel --yes
+sudo apt install ibus-cangjie --yes
 
 cp -r ./~/. ~/
 touch ~/Templates/Empty\ Document
