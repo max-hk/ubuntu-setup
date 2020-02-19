@@ -32,7 +32,21 @@
   - Add Cangjie input method in Settings → Region & Language → + → ⁝ → Other → Chinese (Cangjie)
   
 
+- Skip grub menu on boot [(source)](https://askubuntu.com/a/1036957)
 
+  - 
+    ```
+    sudo gedit /etc/default/grub
+    ```
+    
+  - Set GRUB_TIMEOUT to 0.1 (`GRUB_TIMEOUT=0.1`)
+  
+  - 
+    ```
+    sudo update-grub
+    ```
+    
+  - Reboot twice
     
 ## Useful tools
 
