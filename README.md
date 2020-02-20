@@ -45,9 +45,7 @@
     ```
     sudo update-grub
     ```
-    
-- Reboot
-    
+        
 ## Useful tools
 
 - GParted (disk partition)
