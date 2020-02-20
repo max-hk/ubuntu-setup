@@ -46,7 +46,7 @@
     sudo update-grub
     ```
     
-  - Reboot twice
+- Reboot
     
 ## Useful tools
 
