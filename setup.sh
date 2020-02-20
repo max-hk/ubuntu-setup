@@ -12,6 +12,8 @@ sudo apt remove --yes aisleriot
 sudo apt remove --yes gnome-mahjongg
 # "GNOME Mines" game
 sudo apt remove --yes gnome-mines
+# "GNOME Sudoku" game
+sudo apt remove --yes gnome-sudoku
 
 cp -r ./~/. ~/
 touch ~/Templates/Empty\ Document
