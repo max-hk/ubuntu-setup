@@ -16,6 +16,3 @@ sudo apt remove --yes gnome-mines
 cp -r ./~/. ~/
 touch ~/Templates/Empty\ Document
 dconf load / < dconf.txt
-
-# Rebuild font cache after copying font files and enabling emoji
-fc-cache -f -v
