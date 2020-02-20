@@ -39,7 +39,7 @@
     sudo gedit /etc/default/grub
     ```
     
-  - Set GRUB_TIMEOUT to 0.1 ( `GRUB_TIMEOUT=0.1` )
+  - Set `GRUB_TIMEOUT` to `0.1` ( `GRUB_TIMEOUT=0.1` )
   
   - 
     ```
