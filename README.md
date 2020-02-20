@@ -5,8 +5,9 @@
 - 
   ```bash
   chmod +x ./setup.sh
-  chmod +x ./install_firacode.sh
   ./setup.sh
+  
+  chmod +x ./install_firacode.sh
   ./install_firacode.sh
   ```
   
