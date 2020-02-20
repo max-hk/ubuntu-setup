@@ -1,5 +1,5 @@
-sudo apt install --yes gnome-tweaks
 sudo apt install --yes chrome-gnome-shell
+sudo apt install --yes gnome-tweaks
 sudo apt install --yes dconf-editor
 sudo apt install --yes imwheel
 sudo apt install --yes ibus-cangjie
