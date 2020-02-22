@@ -49,10 +49,12 @@
         
 ## Useful tools
 
-- GParted (disk partition)
+### Customization
+
+- Grub Customizer
 
   ```bash
-  sudo apt install gparted
+  sudo apt install grub-customizer
   ```
 
 - mate-mouse-properties (mouse settings)
@@ -61,6 +63,16 @@
   sudo apt install mate-mouse-properties
   ```
   
-- [Anbox](https://docs.anbox.io/userguide/install.html) (Android Apps)
+### Utilities
+
+- GParted (disk partition)
+
+  ```bash
+  sudo apt install gparted
+  ```
 
 - [Stacer](https://github.com/oguzhaninan/Stacer/releases) (Task Manager)
+
+### Others
+
+- [Anbox](https://docs.anbox.io/userguide/install.html) (Android Apps)
