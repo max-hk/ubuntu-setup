@@ -57,6 +57,8 @@
   sudo apt install grub-customizer
   ```
 
+- [Grub-theme-stylish](https://www.gnome-look.org/p/1009237/) ([GitHub](https://github.com/vinceliuice/grub2-themes))
+
 - mate-mouse-properties (mouse settings)
 
   ```bash
