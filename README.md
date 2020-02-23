@@ -95,3 +95,7 @@
   Distribution: stable
   Components: main
   ```
+
+  ```
+  sudo apt install code-insiders
+  ```
