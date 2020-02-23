@@ -19,7 +19,7 @@ terminal-border: "0"
   top = 30%
   width = 45%
   height = 60%
-  item_font = "Roboto Regular 16"
+  item_font = "Roboto Regular 24"
   item_color = "#cccccc"
   selected_item_color = "#ffffff"
   icon_width = 48
@@ -40,5 +40,5 @@ terminal-border: "0"
   id = "__timeout__"
   text = "Booting in %d seconds"
   color = "#cccccc"
-  font = "Roboto Regular 16"
+  font = "Roboto Regular 24"
 }
