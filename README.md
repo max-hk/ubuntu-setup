@@ -47,11 +47,15 @@
     sudo update-grub
     ```
     
-## Other customizations
+## Customizations
 
-### Visual Studio Code
+- Visual Studio Code
 
-Custom CSS: edit `/usr/share/code-insiders/resources/app/out/vs/workbench/workbench.desktop.main.css`
+  Custom CSS: edit `/usr/share/code-insiders/resources/app/out/vs/workbench/workbench.desktop.main.css`
+  
+- [Grub-theme-stylish](https://www.gnome-look.org/p/1009237/)
+
+  https://github.com/vinceliuice/grub2-themes
         
 ## Useful tools
 
@@ -63,7 +67,6 @@ Custom CSS: edit `/usr/share/code-insiders/resources/app/out/vs/workbench/workbe
   sudo apt install grub-customizer
   ```
 
-- [Grub-theme-stylish](https://www.gnome-look.org/p/1009237/), [GitHub](https://github.com/vinceliuice/grub2-themes)
 
 - mate-mouse-properties (mouse settings)
 
