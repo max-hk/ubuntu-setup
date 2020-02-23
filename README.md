@@ -46,6 +46,12 @@
     ```
     sudo update-grub
     ```
+    
+## Other customizations
+
+### Visual Studio Code
+
+Custom CSS: edit `/usr/share/code-insiders/resources/app/out/vs/workbench/workbench.desktop.main.css`
         
 ## Useful tools
 
