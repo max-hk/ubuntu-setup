@@ -67,7 +67,6 @@
   sudo apt install grub-customizer
   ```
 
-
 - mate-mouse-properties (mouse settings)
 
   ```bash
@@ -87,3 +86,12 @@
 ### Others
 
 - [Anbox](https://docs.anbox.io/userguide/install.html) (Android Apps)
+
+- Visual Studio Code
+
+  ```
+  Type: Binary
+  URI: http://packages.microsoft.com/repos/vscode
+  Distribution: stable
+  Components: main
+  ```
