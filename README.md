@@ -41,7 +41,7 @@
 
 - grub
 
-  - Skip grub menu on boot [(source)](https://askubuntu.com/a/1036957)
+  - Skip grub menu on boot ([source](https://askubuntu.com/a/1036957))
 
     - 
       ```
@@ -55,7 +55,7 @@
       sudo update-grub
       ```
 
-  - Disable purple bootloader splash
+  - Disable purple bootloader splash ([source](https://medium.com/@ThilinaAshenGamage/ubuntu-changing-the-default-look-feel-of-ubuntu-theme-icons-wallpapers-brightness-grub-fd65ddbde496))
 
     - 
       ```
@@ -69,6 +69,11 @@
       if background_color 0,0,0,0; then
         clear
       fi
+      ```
+
+    - 
+      ```
+      sudo update-grub
       ```
 
   - [Stylish grub theme](https://www.gnome-look.org/p/1009237/) ([GitHub](https://github.com/vinceliuice/grub2-themes))
