@@ -53,11 +53,25 @@
 
   Custom CSS: edit `/usr/share/code-insiders/resources/app/out/vs/workbench/workbench.desktop.main.css`
   
-- [Grub-theme-stylish](https://www.gnome-look.org/p/1009237/)
+- grub
 
-  https://github.com/vinceliuice/grub2-themes
+  - Disable purple grub bootloader splash
+  
+    ```sudo gedit /usr/share/plymouth/themes/default.grub```
+    
+    ```
+    # previously #2c001e 44,0,30,0
+    # now yaru #4f194c 79,25,76
+    if background_color 0,0,0,0; then
+      clear
+    fi
+    ```
+
+  - [Stylish grub theme](https://www.gnome-look.org/p/1009237/)
+
+    https://github.com/vinceliuice/grub2-themes
         
-## Useful tools
+## Programs
 
 ### Customization
 
@@ -83,9 +97,7 @@
 
 - [Stacer](https://github.com/oguzhaninan/Stacer/releases) (Task Manager)
 
-### Others
-
-- [Anbox](https://docs.anbox.io/userguide/install.html) (Android Apps)
+### Development
 
 - Visual Studio Code
 
@@ -99,3 +111,9 @@
   ```
   sudo apt install code-insiders
   ```
+  
+- [Github desktop (Linux fork)](https://github.com/shiftkey/desktop/releases)
+
+### Others
+
+- [Anbox](https://docs.anbox.io/userguide/install.html) (Android Apps)
