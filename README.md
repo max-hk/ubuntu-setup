@@ -69,9 +69,7 @@
     fi
     ```
 
-  - [Stylish grub theme](https://www.gnome-look.org/p/1009237/)
-
-    https://github.com/vinceliuice/grub2-themes
+  - [Stylish grub theme](https://www.gnome-look.org/p/1009237/) ([GitHub](https://github.com/vinceliuice/grub2-themes))
         
 ## Programs
 
