@@ -31,43 +31,45 @@
   - Comment out line 23, 24
   
   - Add Cangjie input method in Settings → Region & Language → + → ⁝ → Other → Chinese (Cangjie)
-  
 
-- Skip grub menu on boot [(source)](https://askubuntu.com/a/1036957)
-
-  - 
-    ```
-    sudo gedit /etc/default/grub
-    ```
-    
-  - Set `GRUB_TIMEOUT` to `0.1` ( `GRUB_TIMEOUT=0.1` )
-  
-  - 
-    ```
-    sudo update-grub
-    ```
     
 ## Customizations
 
 - Visual Studio Code
 
   Custom CSS: edit `/usr/share/code-insiders/resources/app/out/vs/workbench/workbench.desktop.main.css`
-  
+
 - grub
 
+  - Skip grub menu on boot [(source)](https://askubuntu.com/a/1036957)
+
+    - 
+      ```
+      sudo gedit /etc/default/grub
+      ```
+
+    - Set `GRUB_TIMEOUT` to `0.1` ( `GRUB_TIMEOUT=0.1` )
+
+    - 
+      ```
+      sudo update-grub
+      ```
+
   - Disable purple bootloader splash
-  
-    ```
-    sudo gedit /usr/share/plymouth/themes/default.grub
-    ```
-    
-    ```
-    # previously #2c001e 44,0,30,0
-    # now yaru #4f194c 79,25,76
-    if background_color 0,0,0,0; then
-      clear
-    fi
-    ```
+
+    - 
+      ```
+      sudo gedit /usr/share/plymouth/themes/default.grub
+      ```
+
+    - 
+      ```
+      # previously #2c001e 44,0,30,0
+      # now yaru #4f194c 79,25,76
+      if background_color 0,0,0,0; then
+        clear
+      fi
+      ```
 
   - [Stylish grub theme](https://www.gnome-look.org/p/1009237/) ([GitHub](https://github.com/vinceliuice/grub2-themes))
         
