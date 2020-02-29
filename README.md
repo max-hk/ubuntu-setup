@@ -55,7 +55,7 @@
   
 - grub
 
-  - Disable purple grub bootloader splash
+  - Disable purple bootloader splash
   
     ```
     sudo gedit /usr/share/plymouth/themes/default.grub
