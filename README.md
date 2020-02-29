@@ -37,7 +37,13 @@
 
 - Visual Studio Code
 
-  Custom CSS: edit `/usr/share/code-insiders/resources/app/out/vs/workbench/workbench.desktop.main.css`
+  - Custom CSS
+
+    Edit `/usr/share/code-insiders/resources/app/out/vs/workbench/workbench.desktop.main.css`
+
+  - Reset panel size
+
+    Delete directory `~/.config/Code - Insiders/User/globalStorage/`
 
 - grub
 
