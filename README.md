@@ -1,6 +1,6 @@
 # ubuntu-setup
 
-## Run
+## Setup
 
 - 
   ```bash
