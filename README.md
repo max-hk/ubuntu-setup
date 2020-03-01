@@ -112,18 +112,7 @@
 
 ### Development
 
-- Visual Studio Code
-
-  ```
-  Type: Binary
-  URI: http://packages.microsoft.com/repos/vscode
-  Distribution: stable
-  Components: main
-  ```
-
-  ```
-  sudo apt install code-insiders
-  ```
+- [Visual Studio Code](https://code.visualstudio.com/)
   
 - [Github desktop (Linux fork)](https://github.com/shiftkey/desktop/releases)
 
