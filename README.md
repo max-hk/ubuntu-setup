@@ -108,7 +108,7 @@
   sudo apt install gparted
   ```
 
-- [Stacer](https://github.com/oguzhaninan/Stacer/releases) (Task Manager)
+- [Stacer](https://github.com/oguzhaninan/Stacer/releases) (task Manager)
 
 ### Development
 
