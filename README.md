@@ -79,6 +79,12 @@
   - Custom CSS
 
     Edit `/usr/share/code-insiders/resources/app/out/vs/workbench/workbench.desktop.main.css`
+    
+  - Change UI font
+  
+    ```
+    sudo sed -i 's/Ubuntu,/Roboto,Ubuntu,/g' /usr/share/code-insiders/resources/app/out/vs/workbench/workbench.desktop.main.css
+    ```
 
   - Reset panel size
 
