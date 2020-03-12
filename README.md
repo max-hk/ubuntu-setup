@@ -25,7 +25,7 @@
 
   - 
     ```bash
-    # -r flag is required to replace single quote character
+    # -r flag is required to replace single quote characters
     # https://stackoverflow.com/questions/8510713/sed-single-quotes#comment10535527_8510713
     sudo sed -i -r -e "s/gi.require_version\('Gio','3.0'\)//g" -e "s/gi.require_version\('GLib','3.0'\)//g" /usr/lib/python3/dist-packages/ibus_cangjie/setup.py
     ```
