@@ -25,10 +25,10 @@
 
   - 
       ```
-      sudo gedit /usr/lib/python3/dist-packages/ibus_cangjie/setup.py
+      # -r flag is required to replace sigle quote charactor
+      # https://stackoverflow.com/q/8510713 (comments)
+      sudo sed -i -r -e "s/gi.require_version\('Gio','3.0'\)//g" -e "s/gi.require_version\('GLib','3.0'\)//g" /usr/lib/python3/dist-packages/ibus_cangjie/setup.py
       ```
-
-  - Comment out line 23, 24
   
   - Add Cangjie input method in Settings → Region & Language → + → ⁝ → Other → Chinese (Cangjie)
 
