@@ -75,10 +75,6 @@
   - [Stylish grub theme](https://www.gnome-look.org/p/1009237/) ([GitHub](https://github.com/vinceliuice/grub2-themes))
 
 - Visual Studio Code
-
-  - Custom CSS
-
-    Edit `/usr/share/code-insiders/resources/app/out/vs/workbench/workbench.desktop.main.css`
     
   - Change UI font (run after every update)
   
