@@ -17,5 +17,5 @@ sudo apt remove --yes gnome-mines
 sudo apt remove --yes gnome-sudoku
 
 cp -r ./~/. ~/
-touch ~/Templates/Empty\ Document
 dconf load / < dconf.txt
+touch ~/Templates/Empty\ Document
