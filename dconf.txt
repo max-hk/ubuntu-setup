@@ -6,9 +6,6 @@ enable-hot-corners=true
 [org/gnome/desktop/wm/preferences]
 titlebar-font='Roboto Bold 11'
 
-[org/gnome/desktop/peripherals/mouse]
-speed=-0.5
-
 [org/gnome/shell]
 favorite-apps=['org.gnome.Nautilus.desktop', 'gnome-system-monitor.desktop', 'google-chrome.desktop', 'org.gnome.Terminal.desktop']
 enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'desktop-icons@csoriano', 'dash-to-panel@jderose9.github.com']
