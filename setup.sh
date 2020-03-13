@@ -1,4 +1,10 @@
 #!/bin/bash
+
+cp -r ./~/. ~/
+dconf load / < dconf.txt
+
+sudo su
+
 sudo apt install --yes chrome-gnome-shell
 sudo apt install --yes gnome-tweaks
 sudo apt install --yes dconf-editor
@@ -16,9 +22,6 @@ sudo apt remove --yes gnome-mahjongg
 sudo apt remove --yes gnome-mines
 # "GNOME Sudoku" game
 sudo apt remove --yes gnome-sudoku
-
-cp -r ./~/. ~/
-dconf load / < dconf.txt
 
 # -r flag is required to replace single quote characters
 # https://stackoverflow.com/questions/8510713/sed-single-quotes#comment10535527_8510713
