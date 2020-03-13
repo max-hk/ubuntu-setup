@@ -18,4 +18,3 @@ sudo apt remove --yes gnome-sudoku
 
 cp -r ./~/. ~/
 dconf load / < dconf.txt
-touch ~/Templates/Empty\ Document
