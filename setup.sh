@@ -3,7 +3,7 @@ sudo apt install --yes gnome-tweaks
 sudo apt install --yes dconf-editor
 sudo apt install --yes imwheel
 sudo apt install --yes ibus-cangjie
-# sudo apt install --yes gnome-shell-extension-dash-to-panel
+sudo apt install grub-customizer
 
 # "Amazon" shortcut
 sudo apt remove --yes ubuntu-web-launchers
