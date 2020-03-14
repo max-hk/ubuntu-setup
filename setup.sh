@@ -3,8 +3,6 @@
 cp -r ./~/. ~/
 dconf load / < dconf.txt
 
-sudo su
-
 sudo apt install --yes chrome-gnome-shell
 sudo apt install --yes gnome-tweaks
 sudo apt install --yes dconf-editor
