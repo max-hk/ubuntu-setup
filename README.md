@@ -114,3 +114,20 @@
 ### Others
 
 - [Anbox](https://docs.anbox.io/userguide/install.html) (Android Apps)
+
+## Useful commands
+
+- List manually installed packages [(source)](https://askubuntu.com/a/492343)
+
+  ```
+  comm -23 <(apt-mark showmanual | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
+  ```
+- List removed preinstalled packages
+
+  ```
+  comm -13 <(apt list --installed | sed -n 's/[//].*//p' | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
+  
+  # or
+
+  comm -13 <( ( apt-mark showmanual; apt-mark showauto ) | cat | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
+  ```
