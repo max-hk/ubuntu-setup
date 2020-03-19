@@ -44,27 +44,6 @@
       sudo update-grub
       ```
 
-  - Disable purple bootloader splash ([source](https://medium.com/@ThilinaAshenGamage/ubuntu-changing-the-default-look-feel-of-ubuntu-theme-icons-wallpapers-brightness-grub-fd65ddbde496))
-
-    - 
-      ```
-      sudo gedit /usr/share/plymouth/themes/default.grub
-      ```
-
-    - 
-      ```
-      # previously #2c001e 44,0,30,0
-      # now yaru #4f194c 79,25,76
-      if background_color 0,0,0,0; then
-        clear
-      fi
-      ```
-
-    - 
-      ```
-      sudo update-grub
-      ```
-
   - [Stylish grub theme](https://www.gnome-look.org/p/1009237/) ([GitHub](https://github.com/vinceliuice/grub2-themes))
 
 - Visual Studio Code
@@ -124,9 +103,17 @@
   ```
 - List removed preinstalled packages
 
+  <!--
   ```
+  # WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
   comm -13 <(apt list --installed | sed -n 's/[//].*//p' | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
-  
+  comm -13 <(apt list --installed | awk -F '/' '{print $1}' | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
+  ```
+  -->
+
+  ```
+  comm -13 <(dpkg -l | grep ^ii | awk '{print $2}' | awk -F: '{print $1}' | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
+
   # or
 
   comm -13 <( ( apt-mark showmanual; apt-mark showauto ) | cat | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)

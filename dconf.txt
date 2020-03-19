@@ -28,3 +28,10 @@ name='Yaru Roboto'
 [org/cangjians/ibus/cangjie]
 include-symbols=true
 version=5
+
+[org/gnome/evince/default]
+continuous=true
+dual-page=true
+dual-page-odd-left=true
+show-sidebar=false
+zoom=0.7
