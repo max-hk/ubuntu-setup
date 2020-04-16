@@ -109,7 +109,6 @@
   comm -13 <(apt list --installed | sed -n 's/[//].*//p' | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
   comm -13 <(apt list --installed | awk -F '/' '{print $1}' | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
   ```
-  -->
 
   ```
   comm -13 <(dpkg -l | grep ^ii | awk '{print $2}' | awk -F: '{print $1}' | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
@@ -117,4 +116,11 @@
   # or
 
   comm -13 <( ( apt-mark showmanual; apt-mark showauto ) | cat | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
+  ```
+  -->
+  
+  ```
+  comm -23 \
+    <(comm -13 <(dpkg -l | grep ^ii | awk '{print $2}' | awk -F: '{print $1}' | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)) \
+    <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Depends: //p' | awk '{split($0, packages, ", "); for (key in packages) { printf "%s\n", packages[key] } }' | awk '{print $1}' | sort -u)
   ```
