@@ -112,5 +112,5 @@
   ```
   comm -23 \
     <( comm -23 <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u) <(dpkg -l | grep ^ii | awk '{print $2}' | awk -F: '{print $1}' | sort -u) ) \
-    <( gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Depends: //p' | awk '{split($0, packages, ", "); for (key in packages) { printf "%s\n", packages[key] } }' | awk '{print $1}' | sort -u )
+    <( gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Depends: //p' | awk '{split($0, packages, ", |\| "); for (key in packages) { printf "%s\n", packages[key] } }' | awk '{print $1}' | sort -u )
   ```
