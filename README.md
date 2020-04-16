@@ -13,10 +13,6 @@
   
 - Install [Chrome](https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
 
-<!--
-- Install font [Roboto](https://github.com/google/roboto/releases/tag/v2.138), [Noto Sans CJK HK](https://github.com/googlefonts/noto-cjk)
--->
-
 - Install [GNOME Shell integration extension](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)
 
   - Install [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/), [User Themes](https://extensions.gnome.org/extension/19/user-themes/), [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
@@ -106,21 +102,15 @@
   <!--
   ```
   # WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-  comm -13 <(apt list --installed | sed -n 's/[//].*//p' | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
-  comm -13 <(apt list --installed | awk -F '/' '{print $1}' | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
-  ```
-
-  ```
-  comm -13 <(dpkg -l | grep ^ii | awk '{print $2}' | awk -F: '{print $1}' | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
-
-  # or
-
-  comm -13 <( ( apt-mark showmanual; apt-mark showauto ) | cat | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
+  # <(apt list --installed | sed -n 's/[//].*//p' | sort -u)
+  # <(apt list --installed | awk -F '/' '{print $1}' | sort -u)
+  # <( (apt-mark showmanual; apt-mark showauto) | cat | sort -u)
+  comm -23 <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u) <(dpkg -l | grep ^ii | awk '{print $2}' | awk -F: '{print $1}' | sort -u) 
   ```
   -->
   
   ```
   comm -23 \
-    <(comm -13 <(dpkg -l | grep ^ii | awk '{print $2}' | awk -F: '{print $1}' | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)) \
-    <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Depends: //p' | awk '{split($0, packages, ", "); for (key in packages) { printf "%s\n", packages[key] } }' | awk '{print $1}' | sort -u)
+    <( comm -23 <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u) <(dpkg -l | grep ^ii | awk '{print $2}' | awk -F: '{print $1}' | sort -u) ) \
+    <( gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Depends: //p' | awk '{split($0, packages, ", "); for (key in packages) { printf "%s\n", packages[key] } }' | awk '{print $1}' | sort -u )
   ```
