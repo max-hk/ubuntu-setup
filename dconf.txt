@@ -24,6 +24,8 @@ dot-style-unfocused='DOTS'
 location-clock='STATUSRIGHT'
 scroll-panel-action='NOTHING'
 show-apps-icon-side-padding=2
+show-showdesktop-delay=0
+show-showdesktop-hover=true
 taskbar-locked=true
 tray-padding=4
 
