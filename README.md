@@ -120,6 +120,9 @@
   -->
   
   ```
+  initial_ubuntu_version="19.10"
+  current_ubuntu_version="20.04"
+
   comm -23 \
     <(
       comm -23 \
@@ -128,7 +131,7 @@
     ) \
     <(
       comm -23 \
-      <( wget http://releases.ubuntu.com/19.10/ubuntu-19.10-desktop-amd64.manifest -q -O - | cut -f 1 | awk -F"[ :]" '{print $1}' | sort -u ) \
-      <( wget https://releases.ubuntu.com/20.04/ubuntu-20.04-desktop-amd64.manifest -q -O - | cut -f 1 | awk -F"[ :]" '{print $1}' | sort -u )
+        <( wget "http://releases.ubuntu.com/$initial_ubuntu_version/ubuntu-$initial_ubuntu_version-desktop-amd64.manifest" -q -O - | cut -f 1 | awk -F"[ :]" '{print $1}' | sort -u ) \
+        <( wget "http://releases.ubuntu.com/$current_ubuntu_version/ubuntu-$current_ubuntu_version-desktop-amd64.manifest" -q -O - | cut -f 1 | awk -F"[ :]" '{print $1}' | sort -u )
     )
   ```
