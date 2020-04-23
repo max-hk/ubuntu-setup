@@ -80,6 +80,14 @@
 
 - [Stacer](https://github.com/oguzhaninan/Stacer/releases) (task Manager)
 
+- http://docfetcher.sourceforge.net/en/index.html
+
+- https://www.lesbonscomptes.com/recoll/
+
+- https://docs.xfce.org/apps/catfish/start
+
+- https://github.com/yatima1460/Drill
+
 ### Development
 
 - [Visual Studio Code](https://code.visualstudio.com/)
