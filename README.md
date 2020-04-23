@@ -121,6 +121,14 @@
   
   ```
   comm -23 \
-    <( comm -23 <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u) <(dpkg -l | grep ^ii | awk -F"[ :]" '{print $3}' | sort -u) ) \
-    <( gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Depends: //p' | awk '{split($0, packages, ", |\| "); for (key in packages) { printf "%s\n", packages[key] } }' | awk '{print $1}' | sort -u )
+    <(
+      comm -23 \
+        <( comm -23 <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u) <(dpkg -l | grep ^ii | awk -F"[ :]" '{print $3}' | sort -u) ) \
+        <( gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Depends: //p' | awk '{split($0, packages, ", |\| "); for (key in packages) { printf "%s\n", packages[key] } }' | awk '{print $1}' | sort -u )
+    ) \
+    <(
+      comm -23 \
+      <( wget http://releases.ubuntu.com/19.10/ubuntu-19.10-desktop-amd64.manifest -q -O - | cut -f 1 | awk -F"[ :]" '{print $1}' | sort -u ) \
+      <( wget https://releases.ubuntu.com/20.04/ubuntu-20.04-desktop-amd64.manifest -q -O - | cut -f 1 | awk -F"[ :]" '{print $1}' | sort -u )
+    )
   ```
