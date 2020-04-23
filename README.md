@@ -80,6 +80,8 @@
 
 - [Stacer](https://github.com/oguzhaninan/Stacer/releases) (task Manager)
 
+- https://launchpad.net/ubuntu/+source/ksysguard
+
 - http://docfetcher.sourceforge.net/en/index.html
 
 - https://www.lesbonscomptes.com/recoll/
