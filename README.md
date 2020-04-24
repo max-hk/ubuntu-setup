@@ -124,7 +124,7 @@
   current_ubuntu_version="20.04"
   comm -23 \
     <(
-      # All removed preinstalled packages
+      # All removed preinstalled packages, excluding dependencies
       comm -23 \
         <( comm -23 <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u) <(dpkg -l | grep ^ii | awk -F"[ :]" '{print $3}' | sort -u) ) \
         <( gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Depends: //p' | awk '{split($0, packages, ", |\| "); for (key in packages) { printf "%s\n", packages[key] } }' | awk '{print $1}' | sort -u )
