@@ -122,15 +122,17 @@
   ```
   initial_ubuntu_version="19.10"
   current_ubuntu_version="20.04"
-  packages_removed=`
-    comm -23 \
-      <( comm -23 <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u) <(dpkg -l | grep ^ii | awk -F"[ :]" '{print $3}' | sort -u) ) \
-      <( gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Depends: //p' | awk '{split($0, packages, ", |\| "); for (key in packages) { printf "%s\n", packages[key] } }' | awk '{print $1}' | sort -u )
-  `
-  packages_removed_on_system_update=`
-    comm -23 \
-      <( wget "http://releases.ubuntu.com/$initial_ubuntu_version/ubuntu-$initial_ubuntu_version-desktop-amd64.manifest" -q -O - | cut -f 1 | awk -F"[ :]" '{print $1}' | sort -u ) \
-      <( wget "http://releases.ubuntu.com/$current_ubuntu_version/ubuntu-$current_ubuntu_version-desktop-amd64.manifest" -q -O - | cut -f 1 | awk -F"[ :]" '{print $1}' | sort -u )
-  `
-  comm -23 <( echo "$packages_removed" ) <( echo "$packages_removed_on_system_update" )
+  comm -23 \
+    <(
+      # All removed preinstalled packages
+      comm -23 \
+        <( comm -23 <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u) <(dpkg -l | grep ^ii | awk -F"[ :]" '{print $3}' | sort -u) ) \
+        <( gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Depends: //p' | awk '{split($0, packages, ", |\| "); for (key in packages) { printf "%s\n", packages[key] } }' | awk '{print $1}' | sort -u )
+    ) \
+    <(
+      # Packages being removed during system update
+      comm -23 \
+        <( wget "http://releases.ubuntu.com/$initial_ubuntu_version/ubuntu-$initial_ubuntu_version-desktop-amd64.manifest" -q -O - | cut -f 1 | awk -F"[ :]" '{print $1}' | sort -u ) \
+        <( wget "http://releases.ubuntu.com/$current_ubuntu_version/ubuntu-$current_ubuntu_version-desktop-amd64.manifest" -q -O - | cut -f 1 | awk -F"[ :]" '{print $1}' | sort -u )
+    )
   ```
