@@ -131,7 +131,7 @@
     ) \
     <(
       # Packages being removed during system update
-      comm -2 \
+      comm -23 \
         <( wget "http://releases.ubuntu.com/$initial_ubuntu_version/ubuntu-$initial_ubuntu_version-desktop-amd64.manifest" -q -O - | cut -f 1 | awk -F"[ :]" '{print $1}' | sort -u ) \
         <( wget "http://releases.ubuntu.com/$current_ubuntu_version/ubuntu-$current_ubuntu_version-desktop-amd64.manifest" -q -O - | cut -f 1 | awk -F"[ :]" '{print $1}' | sort -u )
     )
