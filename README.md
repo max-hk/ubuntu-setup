@@ -140,5 +140,5 @@
   ```
   comm -23 \
     <(apt depends ubuntu-desktop | sed 's/Depends: //; s/Recommends: //; s/:i386//' | awk '{$1=$1};1' | sort -u) \
-    <({ apt-mark showauto & apt-mark showmanual; } |  sort -u)
+    <({ apt-mark showauto & apt-mark showmanual; } | sort -u)
   ```
