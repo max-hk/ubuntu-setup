@@ -136,3 +136,9 @@
         <( wget "http://releases.ubuntu.com/$current_ubuntu_version/ubuntu-$current_ubuntu_version-desktop-amd64.manifest" -q -O - | cut -f 1 | awk -F"[ :]" '{print $1}' | sort -u )
     )
   ```
+  
+  ```
+  comm -13 \
+    <({ apt-mark showauto & apt-mark showmanual; } |  sort -u)
+    <(apt depends ubuntu-desktop | sed 's/Depends: //' | sed 's/Recommends: //' | sed 's/:i386//' | awk '{$1=$1};1' | sort -u)
+  ```
