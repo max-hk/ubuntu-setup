@@ -138,7 +138,7 @@
   ```
   
   ```
-  comm -13 \
+  comm -23 \
+    <(apt depends ubuntu-desktop | sed -e 's/Depends: //' -e 's/Recommends: //' -e 's/:i386//' | awk '{$1=$1};1' | sort -u) \
     <({ apt-mark showauto & apt-mark showmanual; } |  sort -u)
-    <(apt depends ubuntu-desktop | sed 's/Depends: //' | sed 's/Recommends: //' | sed 's/:i386//' | awk '{$1=$1};1' | sort -u)
   ```
