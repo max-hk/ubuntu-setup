@@ -117,7 +117,6 @@
   # <( (apt-mark showmanual; apt-mark showauto) | cat | sort -u)
   comm -23 <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u) <(dpkg -l | grep ^ii | awk '{print $2}' | awk -F: '{print $1}' | sort -u) 
   ```
-  -->
   
   ```
   initial_ubuntu_version="19.10"
@@ -141,6 +140,10 @@
   comm -23 \
     <(apt depends ubuntu-desktop | sed 's/Depends: //; s/Recommends: //; s/:i386//' | awk '{$1=$1};1' | sort -u) \
     <({ apt-mark showauto & apt-mark showmanual; } | sort -u)
+    
+  ```
+  -->
+  ```
   comm -23 \
     <(apt depends ubuntu-desktop | sed -n 's/Depends: //p; s/Recommends: //p' | awk '{$1=$1};1' | sort -u) \
     <({ apt-mark showauto & apt-mark showmanual; } |  sort -u)
