@@ -10,8 +10,6 @@ sudo apt install --yes imwheel
 sudo apt install --yes ibus-cangjie
 sudo apt install --yes grub-customizer
 
-# "Amazon" shortcut
-sudo apt remove --yes ubuntu-web-launchers
 # "Aisleriot Solitaire" game
 sudo apt remove --yes aisleriot
 # "GNOME Mahjongg" game
