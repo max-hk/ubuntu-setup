@@ -1,0 +1,6 @@
+[Desktop Entry]
+Terminal=false
+Name=Chrome PDF Viewer
+Exec=/home/max/Documents/GitHub/chrome-pdf-viewer/target/release/chrome-pdf-viewer %f
+Type=Application
+NoDisplay=true
