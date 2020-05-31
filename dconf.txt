@@ -21,8 +21,8 @@ show-sidebar=false
 zoom=0.7
 
 [org/gnome/shell]
-favorite-apps=['org.gnome.Nautilus.desktop', 'gnome-system-monitor.desktop', 'google-chrome.desktop', 'org.gnome.Terminal.desktop']
-enabled-extensions=['ubuntu-dock@ubuntu.com', 'desktop-icons@csoriano', 'dash-to-panel@jderose9.github.com']
+enabled-extensions=['clipboard-indicator@tudmotu.com', 'dash-to-panel@jderose9.github.com', 'emoji-selector@maestroschan.fr']
+favorite-apps=['org.gnome.Nautilus.desktop', 'gnome-system-monitor.desktop', 'chrome.desktop', 'org.gnome.Terminal.desktop']
 
 [org/gnome/shell/extensions/dash-to-panel]
 animate-show-apps=false
