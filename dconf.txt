@@ -37,7 +37,7 @@ show-apps-icon-side-padding=2
 show-showdesktop-delay=0
 show-showdesktop-hover=true
 taskbar-locked=true
-tray-padding=4
+tray-padding=6
 
 [org/gnome/shell/extensions/desktop-icons]
 show-home=false
