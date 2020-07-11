@@ -100,6 +100,8 @@
 
 - [Anbox](https://docs.anbox.io/userguide/install.html) (Android Apps)
 
+- [ibus-table-chinese](https://github.com/definite/ibus-table-chinese)
+
 ## Useful commands
 
 - List manually installed packages [(source)](https://askubuntu.com/a/492343)
