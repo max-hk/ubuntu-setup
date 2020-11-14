@@ -27,12 +27,12 @@ favorite-apps=['org.gnome.Nautilus.desktop', 'gnome-system-monitor.desktop', 'ch
 [org/gnome/shell/extensions/dash-to-panel]
 animate-show-apps=false
 appicon-margin=2
-appicon-padding=8
-dot-position='BOTTOM'
+appicon-padding=10
 dot-style-focused='DOTS'
 dot-style-unfocused='DOTS'
-location-clock='STATUSRIGHT'
-scroll-panel-action='NOTHING'
+panel-element-positions='{"0":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
+panel-size=52
+scroll-icon-action='NOTHING'
 show-apps-icon-side-padding=2
 show-showdesktop-delay=0
 show-showdesktop-hover=true
