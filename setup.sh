@@ -19,4 +19,4 @@ sudo apt remove --yes gnome-mines
 # "GNOME Sudoku" game
 sudo apt remove --yes gnome-sudoku
 
-sudo chmod +s update-adblock-hosts.sh
+sudo chmod +s /home/max/.config/autostart-scripts/update-adblock-hosts.sh
