@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=echo "PASSWORD" | sudo -S curl "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" -o /etc/hosts --connect-timeout 1 --max-time 5 --stderr ~/debug.txt
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Update adblock hosts (added manually)
