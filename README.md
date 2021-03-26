@@ -21,8 +21,11 @@
 
   - After restart, add Cangjie input method in Settings → Region & Language → + → ⁝ → Other → Chinese (Cangjie)
 
-    
 ## Customizations
+
+- Cursors
+
+  - [Bibata](https://github.com/ful1e5/Bibata_Cursor)
 
 - grub
 
